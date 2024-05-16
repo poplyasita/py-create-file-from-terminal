@@ -6,7 +6,7 @@ from datetime import datetime
 def create_file(file_path: str) -> None:
     current_time = datetime.now().strftime("%Y-%m-%d%H:%M:%S")
 
-    with open(file_path, "w") as file:
+    with open(file_path, "a") as file:
         file.write(current_time + "\n")
 
     with open(file_path, "a") as file:
